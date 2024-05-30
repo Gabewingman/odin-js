@@ -26,6 +26,13 @@
         btn.addEventListener('click', function master1(){
             let master1 = document.getElementById("Dom");
             master1.innerHTML = 'N/A';
+
+            let name = ["Gabby", "Gale", "Milboy"];
+            if (name[0] == "Gabby"){
+                console.log("Yes.I have the name!");
+            } else {
+                return "Maybe the next one";
+            }
         })
 
         btn.addEventListener('click', function master2(){
@@ -41,6 +48,10 @@
         btn.addEventListener('click', function master3(){
             let master3 = document.getElementsByClassName("Manipulation");
             master3[2].innerHTML = 'N/A';
+            
+            let mName = ["Teresita", "Maritess"];
+            for(i = 0; i < mName.length; i++);
+            console.log(mName);
         })
 
         btn.addEventListener('click', function master4(){
