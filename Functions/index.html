@@ -3,67 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom Manipulation</title>
-    
+    <title>Document</title>
+
+    <style>
+
+        #partition {
+            display: inline-block;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid slateblue;
+        }
+        
+    </style>
 </head>
 <body>
-
-    <p id="Dom">What is my Name?</p>
-    <p class="Manipulation">How old are we?</p>
-    <p class="Manipulation">What is my hobby?</p> 
-    <p class="Manipulation">Who is my Mother?</p>
-    <p class="Manipulation">Who is my Father?</p>
-    <p class="Manipulation">Who is my Brother?</p>
     
-    <button id="btn">Reveal the Answers</button>
-
-</body>
+    <div id="partition">
+        <p>Hello.How are you?</p>
+        <div>
+            <button id="button">Click me</button>
+        </div>
+    </div>
 
     <script>
 
-        const btn = document.getElementById('btn')
+        let name = "Gab";
 
-        btn.addEventListener('click', function master1(){
-            let master1 = document.getElementById("Dom");
-            master1.innerHTML = 'N/A';
+        showName = function() {
+            alert(`Hope you are fine ${name}!`);
+            console.log("Okay. Done!");
+        }
 
-            let name = ["Gabby", "Gale", "Milboy"];
-            if (name[0] == "Gabby"){
-                console.log("Yes.I have the name!");
-            } else {
-                return "Maybe the next one";
-            }
-        })
-
-        btn.addEventListener('click', function master2(){
-            let master2 = document.getElementsByClassName("Manipulation");
-            master2[0].innerHTML = 'I am 23 years old';
-        })
-        
-        btn.addEventListener('click', function master(){
-            let master = document.getElementsByClassName("Manipulation");
-            master[1].innerHTML = 'Coding';
-        })
-
-        btn.addEventListener('click', function master3(){
-            let master3 = document.getElementsByClassName("Manipulation");
-            master3[2].innerHTML = 'N/A';
-            
-            let mName = ["Teresita", "Maritess"];
-            for(i = 0; i < mName.length; i++);
-            console.log(mName);
-        })
-
-        btn.addEventListener('click', function master4(){
-            let master4 = document.getElementsByClassName("Manipulation");
-            master4[3].innerHTML = 'N/A';
-        })
-
-        btn.addEventListener('click', function master5(){
-            let master5 = document.getElementsByClassName("Manipulation");
-            master5[4].innerHTML = 'N/A';
-        })
+        const btn = document.getElementById("button").addEventListener("click", showName);
 
     </script>
-
+</body>
 </html>
