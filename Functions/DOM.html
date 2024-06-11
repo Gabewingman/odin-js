@@ -3,35 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom Manipulation and Event Handling</title>
+    <title>Dom Manipulation & Event Handling</title>
 </head>
 <body>
-
-    <h1 id="h1">DOM manipulation & Event handling</h1>
+    
+    <h1>Dom Manipulation and Event Handling</h1>
 
     <div>
-        <p class="manipulation">What is DOM manipulation?</p>
-        <p class="manipulation">What is Event handling?</p>
+        <p class="manipulate">Name: Peter Gabriel Pulido Bersamina.</p>
+        <p class="manipulate">Age: 23 years old.</p>
+        <p class="manipulate">Career: Web Developer.</p>
+        <p class="manipulate">Hobbies: Coding, Reading, Listening music and Watching movies.</p>
+        <p class="manipulate">What are you doing after 5 years? I think I'am a programmer.</p>
     </div>
-
-    <button id="btn">Click me to know the answers</button>
 
     <script>
 
-        btn.addEventListener("click", function show(){
-            let showDom = document.getElementById("h1");
-            showDom.innerHTML = "DOM MANIPULATION AND EVENT HANDLING";
-            let manipulate = document.getElementsByClassName("manipulate")
-            {
-                let DOM = "DOM (Document Object Model) - DOM manipulation allows developers to interact with and modify the structure, style, and content of web pages.";
-                let Event = "While Event handling in the DOM (Document Object Model) is the process of detecting and responding to user interactions or system events on a web page.";
+        const body = document.body;
+        body.append("Hello, this is me. Appending to your HTML file."); // Adding Elements
 
-                alert(`${DOM}`);
-                alert(`${Event}`);
-
-                console.log("Okay.Done!")
-            }
-        })
+        const div = document.createElement("div");
+        div.innerHTML = "Hi!";
+        body.append(div); // Modifying Element Text
 
     </script>
 </body>
